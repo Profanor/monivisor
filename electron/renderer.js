@@ -1,6 +1,7 @@
-// Add any JavaScript to dynamically update the charts or handle user interactions
-document.addEventListener('DOMContentLoaded', () => {
-    // Example of updating chart content
-    document.getElementById('home').innerText = 'Home Dashboard Content';
-  });
+document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.menu-item').forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+});
   

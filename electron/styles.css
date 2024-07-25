@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #001f3f;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 0;
+}
+
+.user-section {
+  width: 100%;
+  background-color: #87CEEB; 
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px; /* Added space between top section and menu items */
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  color: white;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.toggle-arrow {
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add vertical spacing between items */
+}
+
+.menu-text {
+  color: #b5b9c3;
+}
+
+.menu-item:hover .icon, .menu-item:hover .menu-text {
+  color: #87CEEB; 
+}
+
+.menu-item:active, .menu-item.active {
+  background-color: white;
+  color: #001f3f;
+  border-radius: 50px 0 0 50px; /* Curve on the left side */
+}
+
+.icon {
+  margin-right: 10px;
+}
